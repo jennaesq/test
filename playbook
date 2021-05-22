@@ -1,0 +1,38 @@
+##DevOps playbook for evidation project: test.
+
+The intention of the project is to **set up a simple
+[Sinatra](http://sinatrarb.com/) app, which has a couple of  
+basic CRUD routes and a [postgres](https://www.postgresql.org/)
+database backend.** As long as the app has at least  
+one action that writes to the database, you don't need to implement the full set of  
+CRUD actions.
+​
+​
+## The Runbook
+​
+#### Overview
+The purpose of this runbook is to walk you through building a Sinatra app with postgres  
+backend. This is a common pattern that we totally use on a regular basis within TNEDO, Inc...
+​
+#### The steps
+1. Install prerequisites
+    * Homebrew
+    * Ruby
+    * Sinatra
+    * Bundler    
+2. Configure a simple Sinatra app (e.g. `hello world`)
+    * Creating an Index View in Sinatra (optional)
+    * Configure the app to connect to the/a database using active_support
+    * Adding Postgres to Sinatra
+    ** create a config/directory in the root of your application and add a database.yml file to it.
+    *execute bundle install 
+    * Install Rakefile
+```
+require 'sinatra/activerecord'
+require 'sinatra/activerecord/rake'
+require './app'
+```
+3. Add a Model (e.g. ["User"](https://github.com/sinatra-activerecord/sinatra-activerecord) or "Item") which will be stored/managed in the database.
+4.
+​
+
