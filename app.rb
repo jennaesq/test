@@ -11,10 +11,10 @@ require 'sinatra'
 #  'Welcome to Evidation (hello world)!'
 #end
 
-require "sinatra"
 
 class App < Sinatra::Base
   get "/" do
+    #@users = User.all
     erb :index
   end
 end
